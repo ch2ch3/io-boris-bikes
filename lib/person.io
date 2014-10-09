@@ -6,4 +6,8 @@ Person := Object clone do(
   rentBikeFrom := method(station,
     self bike append(station releaseBike)
   )
+
+  returnBikeTo := method(station,
+    station dock(self bike pop)
+  )
 )

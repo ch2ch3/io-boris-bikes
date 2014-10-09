@@ -12,3 +12,7 @@ ethel := Person clone
 ethel rentBikeFrom(oldStreet)
 
 ("Can rent a bike from a station: " .. assertEqual(bike, ethel bike first)) println
+
+ethel returnBikeTo(oldStreet)
+
+("Can return a bike to a station: " .. assertEqual(nil, ethel bike first)) println
