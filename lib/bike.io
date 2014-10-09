@@ -5,7 +5,7 @@ Bike := Object clone do (
     self
   )
 
-  break := method(
+  die := method(
     self broken := true
     self
   )
