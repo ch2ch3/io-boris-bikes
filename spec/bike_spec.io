@@ -1,4 +1,4 @@
-doFile("bike.io")
+doFile("lib/bike.io")
 
 assertEqual := method(expected, actual, expected == actual)
 

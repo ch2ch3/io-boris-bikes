@@ -1,5 +1,5 @@
-doFile("docking_station.io")
-doFile("bike.io")
+doFile("lib/docking_station.io")
+doFile("lib/bike.io")
 
 assertEqual := method(expected, actual, expected == actual)
 
