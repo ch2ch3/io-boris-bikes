@@ -15,7 +15,7 @@ DockingStation := Object clone do(
     self bikes append(bike)
   )
 
-  release := method(bike,
-    self bikes remove(bike)
+  releaseBike := method(
+    self bikes remove(self availableBikes pop)
   )
 )

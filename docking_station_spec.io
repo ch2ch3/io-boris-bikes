@@ -15,6 +15,11 @@ oldStreet dock(Bike clone)
 
 ("Docking a bike adds it to the station: " .. assertEqual(3, oldStreet bikes size)) println
 
-oldStreet release(bike)
+oldStreet releaseBike
 
 ("Releasing a bike deletes it from the station: " .. assertEqual(2, oldStreet bikes size)) println
+
+oldStreet releaseBike
+oldStreet releaseBike
+
+("A broken bike cannot be released: " .. assertEqual(1, oldStreet bikes size)) println
