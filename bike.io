@@ -1,9 +1,18 @@
-Bike := Object clone
+Bike := Object clone do (
 
-Bike broken ::= false
+  init := method(
+    self broken := false
+    self
+  )
 
-Bike init := method(self setBroken(false))
+  break := method(
+    self broken := true
+    self
+  )
 
-Bike break := method(self setBroken(true))
+  fix := method(
+    self broken := false
+    self
+  )
 
-Bike fix := method(self setBroken(false))
+)
